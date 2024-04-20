@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: GRTSK;
+    font-weight: 700;
+    src: url(./fonts/bold-tera.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: GRTSK;
+    font-weight: 500;
+    src: url(./fonts/extra-light-exa.ttf) format("truetype");
+  }
+
+  body {
+    @apply w-screen h-screen overflow-hidden;
+  }
+
+  * {
+    @apply text-black dark:text-zinc-300;
+  }
+}
