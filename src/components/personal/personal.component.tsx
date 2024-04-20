@@ -6,9 +6,14 @@ export const Personal: FC = () => {
 	/** Hooks */
 	const { userName } = useAppStore();
 
-	/** Fallback */
-	if (!userName) return <UserForm />;
-
 	/** Render */
-	return <p>{userName ?? "HELLO"}</p>;
+	return (
+		<div className="flex justify-center items-center min-h-28">
+			{userName ? (
+				<h2 className="text-2xl">Good morning, {userName}.</h2>
+			) : (
+				<UserForm />
+			)}
+		</div>
+	);
 };

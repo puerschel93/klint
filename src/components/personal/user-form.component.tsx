@@ -21,8 +21,12 @@ export const UserForm: FC = () => {
 
 	/** Render */
 	return (
-		<form onSubmit={methods.handleSubmit(handleOnSubmit)}>
-			<Input {...methods.register("name")} />
+		<form onSubmit={methods.handleSubmit(handleOnSubmit)} className="w-[450px]">
+			<Input
+				placeholder="What's your name?"
+				{...methods.register("name")}
+				autoFocus
+			/>
 		</form>
 	);
 };
