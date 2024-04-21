@@ -10,7 +10,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: colors.teal
+        primary: colors.teal,
+        primaryGray: colors.zinc,
       },
       fontFamily: {
         grtsk: ['GRTSK', 'monospace'],
