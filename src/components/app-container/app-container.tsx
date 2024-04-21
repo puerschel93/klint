@@ -23,7 +23,7 @@ export const AppContainer: FC<AppContainerProps> = ({ children }) => {
 					"w-full h-full",
 					"bg-primaryGray-100 dark:bg-primaryGray-950",
 					"p-8",
-					"flex flex-col",
+					"flex flex-col gap-8",
 				)}
 			>
 				{children}
