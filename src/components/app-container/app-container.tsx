@@ -21,7 +21,7 @@ export const AppContainer: FC<AppContainerProps> = ({ children }) => {
 			<div
 				className={clsx(
 					"w-full h-full",
-					"bg-primaryGray-100 dark:bg-primaryGray-950",
+					"bg-primaryGray-200 dark:bg-primaryGray-950",
 					"p-8",
 					"flex flex-col gap-8",
 				)}

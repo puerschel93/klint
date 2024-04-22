@@ -17,7 +17,7 @@ export const useAppStore = create(
 		(set) => ({
 			colorMode: "dark",
 			userName: undefined,
-			timeFormat: "HH:mm:ss",
+			timeFormat: "HH:mm",
 			toggleColorMode: () => {
 				set((state) => ({
 					colorMode: state.colorMode === "dark" ? "light" : "dark",

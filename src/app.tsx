@@ -1,4 +1,5 @@
 import { AppContainer } from "@/components/app-container";
+import { Content } from "@/components/content";
 import { Header } from "@/components/header";
 import "./index.css";
 
@@ -7,7 +8,7 @@ export const App = () => {
 	return (
 		<AppContainer>
 			<Header />
-			<div className="w-full h-full" />
+			<Content />
 		</AppContainer>
 	);
 };
